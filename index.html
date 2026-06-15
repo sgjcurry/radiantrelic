@@ -1,54 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Radiant Relic</title>
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuclear Physics Instrumentation Course</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0a0f1c;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#001f3f,#004080);
+    padding:80px 20px;
+    text-align:center;
+    border-bottom:3px solid #00d4ff;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    color:#00d4ff;
+}
+
+header p{
+    font-size:1.2rem;
+    max-width:800px;
+    margin:auto;
+}
+
+.cta-button{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 30px;
+    background:#00d4ff;
+    color:#001122;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:6px;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    color:#00d4ff;
+    margin-bottom:20px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#121c2e;
+    padding:25px;
+    border-left:4px solid #00d4ff;
+    border-radius:8px;
+}
+
+.highlight{
+    background:#101827;
+    border-top:2px solid #00d4ff;
+    border-bottom:2px solid #00d4ff;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#050914;
+    color:#999;
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Radiant Relic</h1>
-        <p>A Personal Collection of Uranium Glass</p>
-    </header>
+<!-- HERO SECTION -->
+<header>
+    <h1>Nuclear Physics Instrumentation</h1>
 
-    <section class="about">
-        <h2>About the Collection</h2>
-        <p>
-            Welcome to Radiant Relic — a showcase of my uranium glass pieces.
-            Each item glows under UV light and carries a bit of history.
-        </p>
-    </section>
+    <!-- EDIT COURSE TAGLINE -->
+    <p>
+        Learn how modern nuclear physics experiments detect, process,
+        and analyse radiation using cutting-edge instrumentation.
+    </p>
 
-    <section class="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
+    <!-- EDIT BUTTON LINK -->
+    <a href="#" class="cta-button">Enroll Now</a>
+</header>
 
-            <div class="gallery-item">
-                <img src="images/glass1.jpg" alt="Uranium Glass Bowl">
-                <p>1930s Uranium Glass Bowl</p>
-            </div>
-        
-            <div class="gallery-item">
-                <img src="images/glass2.jpg" alt="Uranium Glass Vase">
-                <p>Art Deco Uranium Vase</p>
-            </div>
-        
-            <div class="gallery-item">
-                <img src="images/glass3.jpg" alt="Uranium Glass Plate">
-                <p>Depression Glass Plate</p>
-            </div>
-        
+<!-- COURSE OVERVIEW -->
+<section>
+    <h2>Course Overview</h2>
+
+    <!-- EDIT COURSE DESCRIPTION -->
+    <p>
+        This course introduces the principles and practical techniques
+        behind nuclear physics instrumentation. Students will explore
+        detector systems, electronics, data acquisition, signal
+        processing, and experimental analysis used in modern research.
+    </p>
+</section>
+
+<!-- WHAT YOU WILL LEARN -->
+<section class="highlight">
+    <h2>What You Will Learn</h2>
+
+    <div class="card-grid">
+
+        <!-- EDIT THESE TOPICS -->
+        <div class="card">
+            <h3>Radiation Detectors</h3>
+            <p>Silicon detectors, scintillators, HPGe systems and more.</p>
         </div>
-        
+
+        <div class="card">
+            <h3>Signal Processing</h3>
+            <p>Pulse shaping, timing electronics and spectroscopy.</p>
         </div>
-    </section>
 
-    <footer>
-        <p>© 2026 Radiant Relic</p>
-    </footer>
+        <div class="card">
+            <h3>Data Acquisition</h3>
+            <p>DAQ systems, triggering and experimental control.</p>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="card">
+            <h3>Data Analysis</h3>
+            <p>ROOT, Python, calibration techniques and uncertainty analysis.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- COURSE MODULES -->
+<section>
+    <h2>Course Modules</h2>
+
+    <!-- EDIT MODULE LIST -->
+    <ol>
+        <li>Introduction to Nuclear Physics Experiments</li>
+        <li>Radiation Interactions with Matter</li>
+        <li>Detector Technologies</li>
+        <li>Front-End Electronics</li>
+        <li>Signal Processing Techniques</li>
+        <li>Data Acquisition Systems</li>
+        <li>Calibration and Characterisation</li>
+        <li>Experimental Data Analysis</li>
+        <li>Current Research Applications</li>
+    </ol>
+</section>
+
+<!-- INSTRUCTOR -->
+<section class="highlight">
+    <h2>Your Instructor</h2>
+
+    <!-- EDIT INSTRUCTOR DETAILS -->
+    <p>
+        <strong>Dr. Your Name</strong><br>
+        Researcher in nuclear physics instrumentation with experience
+        in detector development, spectroscopy and experimental analysis.
+    </p>
+</section>
+
+<!-- COURSE DETAILS -->
+<section>
+    <h2>Course Information</h2>
+
+    <!-- EDIT DETAILS -->
+    <ul>
+        <li><strong>Duration:</strong> 8 Weeks</li>
+        <li><strong>Format:</strong> Online / In Person</li>
+        <li><strong>Level:</strong> Undergraduate / Graduate</li>
+        <li><strong>Certificate:</strong> Included</li>
+    </ul>
+</section>
+
+<!-- FINAL CTA -->
+<section style="text-align:center;">
+    <h2>Ready to Start?</h2>
+
+    <!-- EDIT CTA TEXT -->
+    <p>
+        Join aspiring physicists and researchers in mastering the
+        instrumentation that powers modern nuclear science.
+    </p>
+
+    <a href="#" class="cta-button">Register Today</a>
+</section>
+
+<footer>
+    <!-- EDIT FOOTER -->
+    © 2026 Nuclear Physics Instrumentation Course
+</footer>
+
 </body>
 </html>
